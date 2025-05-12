@@ -150,6 +150,8 @@ void buscar_por_artista(Map *by_artist) {
     for (cancion *s = list_first(lista); s != NULL; s = list_next(lista)) {
         mostrarCancion(s);
     }
+    presioneTeclaParaContinuar();
+    limpiarPantalla();
 }
 
 
@@ -176,6 +178,8 @@ void buscar_por_genero(Map *by_genre) {
     for (cancion *s = list_first(lista); s != NULL; s = list_next(lista)) {
         mostrarCancion(s);
     }
+    presioneTeclaParaContinuar();
+    limpiarPantalla();
 }
 
 // Buscar canciones por tempo
